@@ -59,7 +59,7 @@ jobs:
           gh issue edit "$ISSUE_NUMBER" --add-label "Help Wanted"
           gh issue reopen "$ISSUE_NUMBER"
 
-  pr-comment-jobs:
+  pr-comment-job:
     if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     steps:
